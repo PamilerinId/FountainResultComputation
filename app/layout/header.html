@@ -7,11 +7,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#/">FUO ResCom</a>
+            <a class="navbar-brand" href="#">FUO ResCom</a>
         </div><!-- /.navbar-header -->
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
-            <div class="navbar-form navbar-right" ng-show="authenticated === 1">
+            <div class="navbar-form navbar-right" ng-show="model.user.loggedIn">
                 <div class="form-group form-inline">
                     <span class="text-primary">Hello {{model.user.name}}</span>
                     <a class="btn btn-primary" ng-click="model.logout()">Logout</a>
